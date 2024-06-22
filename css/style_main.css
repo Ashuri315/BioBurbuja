@@ -1,0 +1,101 @@
+*{
+    font-family: Arial, sans-serif;
+    
+}
+header{
+    text-align: center;
+    background-color: #6A994E;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /* Para cambiar el logo a absoluto con respecto al header */
+    position: relative;
+    border-radius: 10px;
+}
+header h1{
+    color: #FAF8F6;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #484848;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    /* Para que se pueda acomoda el texto en el centro del header 
+    sin tomar en cuenta el logo*/
+    position: absolute;
+    left: 30px;
+    bottom: 7px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+.logo:hover{
+    box-shadow: 0 8px 8px #484848;
+}
+.nav-bar{
+    background-image: url(../img/navbar.jpg);
+    display: flex;
+    padding: 14px 0;
+    border-radius: 10px;
+    position: relative;
+}
+.nav-button{
+    margin: 0 auto;
+    display: flex;
+}
+.nav-button img{
+    width: 30px;
+    height: 30px;
+}
+.nav-button a{
+    color: #FAF8F6;
+    text-decoration: none;
+    font-size: 1.2em;
+    /* Respecto a la posición */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Respecto al hover */
+    transition: box-shadow 0.3s ease;
+    height: 60px;
+    width: 120px;
+}
+.nav-button a:hover{
+    text-decoration: underline;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Respecto al dropdown */
+button{
+    border: none;
+    background-color: inherit;
+    font-size: 1em;
+}
+.dropdown{
+    /* Para acomodar los links del dropdown */
+    position: relative;
+}
+/* Sobre los que estan escondidos */
+  .dropdown-content {
+    /* Para que no se vean al inicio */
+    display: none;
+    position: absolute;
+    top: 62px;
+    background-color: #AF7746;
+    border-radius: 10px;
+  }
+  /* Links del dropdown */
+  .dropdown-content a {
+    color: #FAF8F6;
+    padding: 6px 6px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    transition: box-shadow 0.3s ease;
+  }
+  .dropdown-content a:hover {
+    background-color: #9f6735;
+    border-radius: 10px;
+  }
+  /* Este es el que muestra el dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
