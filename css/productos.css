@@ -1,0 +1,148 @@
+.title-products{
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px 0 30px 0;
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
+.search-nav{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.search-input{
+    position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #ededed;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 3rem;
+	overflow: hidden;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.search-input:focus{
+    box-shadow: none;
+}
+
+.select-order{
+    float: right;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.product-box{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    background-color: aqua;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product-box:hover{
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.product-box img{
+    border-radius: 5;
+}
+
+/*.product-box:hover img{
+}*/
+
+.product-box h3{
+    font-size: 14px;
+    font-weight: normal;
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.encabezado-categoria{
+    padding-top: 10px;
+    margin: 0 10% auto;
+    /*max-width: 77%;*/
+    border-bottom: black;
+    align-items: center;
+}
+
+.encabezado-categoria h1{
+    text-shadow: 2px 2px 2px #ccc;
+    align-self: center;
+}
+
+
+.carrito-compras:hover{
+    transform: scale(1.05);
+}
+.product-box button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+
+.product-box .offer{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-box .offer.hidden{
+    visibility: hidden;
+}
+
+.product-box .price{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.product-box strong del{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.stars-group{
+    align-items: center;
+}
+
+.stars-group img{
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.product-box button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-box button:hover{
+    background-color: rgb(157, 157, 157);
+    color: black;
+}
+
+

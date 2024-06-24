@@ -1,0 +1,78 @@
+@import "grid.css";
+@import "productos.css";
+@import "extra-styles.css";
+
+header{
+    text-align: center;
+    background-color: #6A994E;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 16px;
+    position: relative;
+    width: 100%;
+    border-radius: 10;
+}
+header h1{
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px #484848;
+    
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    bottom: 7px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+.logo:hover{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f0;
+}
+main{
+    margin: 0 auto;
+}
+.nav-bar{
+    background-image: url("../img/ultimo.jpg");
+    display: flex;
+    justify-content: center; 
+    padding: 14px 14px; 
+}
+
+.nav-button {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.nav-button img{
+    width: 30px;
+    height: 30px;
+}
+.nav-button a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /*Esto lo que hace es colocarlo en columna la imagen y el texto*/
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    height: 60px;
+    width: 120px;
+}
+
+.nav-button a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #484848;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
