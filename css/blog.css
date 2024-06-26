@@ -1,0 +1,69 @@
+main {
+    float: left;
+    width: calc(80% - 80px);
+    margin-right: 3rem;
+    background-color: rgb(245, 245, 245);
+}
+
+section {
+    margin: 3rem;
+}
+
+.introduccion {
+    text-align: center;
+    align-content: center;
+}
+
+.introduccion img {
+    width: 90%;
+}
+
+.introduccion article {
+    text-align: left;
+    margin-left: 3.9rem;
+    width: 90%;
+}
+.img{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.img1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.img1 img {
+    width: 70%;
+}
+
+.img2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.img2 img{
+    width: 70%;
+}
+.compartir{
+    text-align: center;
+    
+}
+.compartir span{
+    margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+.compartir span:hover{
+    transform: scale(1.3);
+}
+
+/* Sobre cosas específicas */
+#imgB1-cicatrizar{
+    width: 40%;
+}
+#imgB1-quitar-hojas{
+    width: 80%;
+}
+#imgB1-plantar{
+    width: 88%;
+}

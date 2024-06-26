@@ -1,6 +1,6 @@
 *{
     font-family: Arial, sans-serif;
-    
+    font-size: 1.1rem;
 }
 header{
     text-align: center;
@@ -23,7 +23,7 @@ header h1{
     sin tomar en cuenta el logo*/
     position: absolute;
     left: 30px;
-    bottom: 7px;
+    bottom: 25px;
     border-radius: 50%;
     transition: box-shadow 0.3s ease;
 }
@@ -72,7 +72,7 @@ button{
     /* Para que no se vean al inicio */
     display: none;
     position: absolute;
-    top: 56px;
+    top: 61px;
     left: 2px;
     background-color: #AF7746;
     border-radius: 10px;
