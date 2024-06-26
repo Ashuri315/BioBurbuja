@@ -95,3 +95,45 @@ button{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* Para el footer */
+  footer{
+    position: relative;
+    background-color: #BAD266;
+    height: 15rem;
+  }
+  .empresa{
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+    font-size: 2rem;
+  }
+  .logo-footer{
+    left: 43px;
+    bottom: 70px;
+  }
+  .icon-container{
+    text-decoration: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+  .icon-container li{
+    display: flex;
+    align-items: center;
+  }
+  .icon-container li a{
+    display: flex;
+    position: relative;
+    top: 4rem;
+    left: -30rem;
+  }
+  .icon{
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+   .icon:hover{
+    transform: scale(1.2);
+    
+  }
