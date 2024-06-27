@@ -1,17 +1,21 @@
 *{
     scroll-behavior: smooth;
 }
-main {
+footer{
+    border-radius: 10px;
+}
+/* Clases para cada articulo */
+.main-articulo{
     float: left;
     width: calc(80% - 80px);
     margin-right: 1rem;
     margin-top: 1rem;
     background-color: #f9f5f0;
     border-radius: 20px;
-    
+    margin-bottom: 1rem;
 }
 
-section {
+.section-articulo{
     margin: 3rem;
 }
 
@@ -116,4 +120,178 @@ aside ul{
 }
 #imgB1-plantar{
     width: 88%;
+}
+
+/* Clases para la página con todos los artículos del blog */
+.content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.articulos-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.article-box{
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.article-box img{
+    border-radius: 1rem;
+    height: 350;
+    width: 100%;
+}
+
+.content-blog h3 {
+	font-size: 1.2rem;
+	margin-bottom: 1.7rem;
+	color: var(--dark-color);
+	font-weight: 500;
+}
+
+.content-blog h3:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.content-blog p {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #777;
+}
+
+.content-blog span {
+	color: var(--primary-color);
+	font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-read-more {
+    float: left;
+	padding: 1rem 2rem;
+	background-color: #da7cb5;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.btn-read-more:hover {
+	background-color: black;
+}
+
+/* Clases para la página general del blog */
+.container {
+	max-width: 120rem;
+	margin: 2px auto;
+    font-size: 0.875em  
+}
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+    margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 2rem;
+    padding-top: 20px;
+}
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.card-category {
+    margin: 0 auto;
+	height: 20rem;
+    width: 25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.5rem;
+	gap: 1rem;
+    transition: all 0.3s;
+}
+.card-category:hover{
+    transform: scale(1.05);
+}
+.category-tutoriales {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/categorias/tutorial-card.jpeg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.category-especies {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/categorias/especies-card.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-category p {
+	font-size: 2rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category a {
+	font-size: 1.4rem;
+	color: #fff;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+.card-category a:hover {
+	text-decoration: underline;
+}
+
+/* Galeria de imagenes */
+.gallery-inicio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 30rem);
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.gallery-inicio img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery-inicio-img-3 {
+	grid-column: 2/4;
+	grid-row: 1/3;
 }
