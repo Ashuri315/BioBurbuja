@@ -1,7 +1,8 @@
-/*@import "grid.css";*/
 @import "productos.css";
 /*@import "extra-styles.css";*/
 @import "grid2.css";
+@import "sobre-el-sitio.css";
+@import "servicios.css";
 
 
   /*//////////////////////////////////////////
@@ -25,7 +26,7 @@
 	text-align: center;
 	font-weight: 500;
 	font-size: 2rem;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
 .container-categories {
@@ -137,44 +138,7 @@ APERTURA DE LA GALERÍA DE FOTOS
 	grid-column: 4/6;
 	grid-row: 2/4;
 }
-/* ///////////////////////////////////////
-    APERTURA DE CONTENEDOR DE ARTICULO
-    /////////////////////////////////////*/
-.titulo-articulo{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    word-wrap: break-word;
-    align-self: center;
-    font-size: large;
-}
 
-.contenedor-articulo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.contenedor-articulo img{
-    margin-right: 10px;
-    margin-left: 20px;
-}
-.contenedor-texto{
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    justify-content: center;
-    text-align: center;
-}
-
-.contenedor-texto a{
-    color: rgb(14, 0, 137);
-    text-decoration: none;
-}
-
-.contenedor-texto a:hover{
-    text-decoration: underline;
-}
 /* /////////////////////////////////////
    PRUEBA DE ARTICULOS*/
 .articulos-container {
@@ -207,7 +171,7 @@ APERTURA DE LA GALERÍA DE FOTOS
 }
 
 .content-blog h3:hover {
-	color: var(--primary-color);
+	color: black;
 	cursor: pointer;
 }
 
@@ -215,12 +179,6 @@ APERTURA DE LA GALERÍA DE FOTOS
 	margin-top: 1rem;
 	font-size: 1.4rem;
 	color: #777;
-}
-
-.content-blog span {
-	color: var(--primary-color);
-	font-size: 1.3rem;
-    margin-bottom: 1rem;
 }
 
    /*Cierre*/

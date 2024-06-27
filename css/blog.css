@@ -37,7 +37,7 @@ footer{
 }
 
 .introduccion img {
-    width: 90%;
+    width: 50%;
 }
 
 .introduccion article {
@@ -133,6 +133,12 @@ aside ul{
 #imgB1-plantar{
     width: 88%;
 }
+#imgB3-cambio-color{
+    width: 93%;
+}
+#imgB4-introduccion{
+    width: 50%;
+}
 /* Clases para la página con todos los artículos del blog */
 .content {
     padding-top: 30px;
@@ -168,25 +174,15 @@ aside ul{
 .content-blog h3 {
 	font-size: 1.2rem;
 	margin-bottom: 1.7rem;
-	color: var(--dark-color);
+	color: black;
 	font-weight: 500;
 }
 
-.content-blog h3:hover {
-	color: var(--primary-color);
-	cursor: pointer;
-}
 
 .content-blog p {
 	margin-top: 1rem;
 	font-size: 1.4rem;
 	color: #777;
-}
-
-.content-blog span {
-	color: var(--primary-color);
-	font-size: 1.3rem;
-    margin-bottom: 1rem;
 }
 
 .btn-read-more {

@@ -4,8 +4,15 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    font-size: larger;
+    color: rgb(103, 102, 102);
+    line-height: 1.5;
+}
+
+.content p{
+    text-align: left;
 }
 /*.libros {
     margin: 0 auto;
