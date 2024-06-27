@@ -3,6 +3,11 @@
 }
 footer{
     border-radius: 10px;
+
+}
+/* Para que el footer este bien en cada articulo */
+.icon-container li a {
+    left: -13.5rem;
 }
 /* Clases para cada articulo */
 .main-articulo{
@@ -17,6 +22,13 @@ footer{
 
 .section-articulo{
     margin: 3rem;
+}
+.section-articulo a{
+    text-decoration: none;
+    color: black;
+}
+.section-articulo a:hover{
+    color: #d0678f;
 }
 
 .introduccion {
@@ -121,7 +133,6 @@ aside ul{
 #imgB1-plantar{
     width: 88%;
 }
-
 /* Clases para la página con todos los artículos del blog */
 .content {
     padding-top: 30px;
