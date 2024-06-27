@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/estilo-productos.css">
+    <title>Catálogo de suculentas</title>
+    <link rel="stylesheet" href="./css/producto/estilo-productos.css">
 </head>
 <body>
     <header>
-        <img src="img/logo.png" class="logo">
-        <h1>BIOBURBUJA</h1>
+        <img class="logo" src="./img/logo.png" alt="Logo de la empresa">
+        <h1>BioBurbuja</h1>
     </header>
     <nav class="nav-bar">
         <li class="nav-button">
@@ -149,19 +149,84 @@
                 </div>
                 <!--fin-->
             </div>
-            <h1 class="heading-1">¿Eres principiante y quieres aprender a cuidar tus plantas de la manera correcta?</h1>
-            <p>En nuestro blog podrás encontrar información como esta y mucha más</p>
-            <h1 class="heading-1">Artículo destacado</h1>
-
-            <div class="contenedor-articulo">
-                <img src="img/blog/articulo-destacado.jpeg" width="400" height="300">
-                <div class="contenedor-texto">
-                    <a href="#" class="titulo-articulo">Esto son los cuidados básicos para suculentas que todo pricipiante debería saber | BIOBURBUJA.COM</a>
-                </div>
-            </div>
-
         </section>
+
+            <h1 class="heading-1">Artículos destacados</h1>
+
+            <section class="content">
+                <div class="articulos-container">
+                    <!-- Articulo 1 -->
+                    <div class="article-box">
+                        <img src="img/blog/articulo-destacado.jpeg" width="100%" alt="Cactus Echinocereus">
+                        <div class="content-blog">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <div class="btn-read-more">Leer más</div>
+                        </div>
+                    </div>
+                    <!-- Articulo 2 -->
+                    <div class="article-box">
+                        <img src="img/blog/articulo-destacado.jpeg" width="100%" alt="Suculenta Graptoveria">
+                        <div class="content-blog">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <div class="btn-read-more">Leer más</div>
+                        </div>
+                    </div>
+                    <!--Articulo 3-->
+                    <div class="article-box">
+                        <img src="img/blog/articulo-destacado.jpeg" width="100%" alt="Maceta pequeña">
+                        <div class="content-blog">
+                            <h3>Lorem, ipsum dolor sit</h3>
+                            <div class="btn-read-more">Leer más</div>
+                        </div>
+                    </div>
+                    <!--fin-->
+                </div>
+            </section>
     </main>
-    
+    <footer>
+        <img class="logo logo-footer" src="./img/logo.png" alt="Logo de la empresa">
+        <h4 class="empresa">BioBurbuja</h4>
+        <div class="info">
+            <div id="siguenos">
+                <h2 id="titulo-redes"><u>Síguenos</u></h2>
+                <ul id="redes-sociales" class="icon-container">
+                    <li>
+                        <a href="https://www.youtube.com/@VerdeSuculenta/videos">
+                            <img class="icon" src="./img/iconos/icono-youtube.png" alt="Icono de youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/suculentasheredia/">
+                            <img class="icon" src="./img/iconos/icono-instagram.png"
+                                alt="Icono de la aplicación de Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/elim03coaquerachavez/_created/">
+                            <img class="icon" src="./img/iconos/icono-pinterest.png"
+                                alt="Icono de la aplicación de YouTube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@suculentas_analu?_t=8YvaEagjC6g&_r=1">
+                            <img class="icon" class="icon" src="./img/iconos/icono-tiktok.png"
+                                alt="Icono de la aplicación de TikTok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://atipicas.com/">
+                            <img class="icon" src="./img/iconos/icono-libro.png" alt="Icono de un libro">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contactanos" class="contactanos">
+                <h2><u>Contáctanos</u></h2>
+                <p>+506 1234-5678</p>
+                <p>+506 8765-4321</p>
+                <p>bioburbuja.contacto@gmail.com</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

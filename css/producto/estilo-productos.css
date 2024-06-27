@@ -1,0 +1,244 @@
+/*@import "grid.css";*/
+@import "productos.css";
+/*@import "extra-styles.css";*/
+@import "grid2.css";
+
+
+  /*//////////////////////////////////////////
+    PARA HACER EL CONTENEDOR DE LAS CATEGORÍAS
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+  .container {
+	max-width: 120rem;
+	margin: 2px auto;
+    font-size: 0.875em  
+}
+
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+    margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 2rem;
+    padding-top: 20px;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/*gap: 1rem;*/
+}
+
+.card-category {
+    margin: 0 auto;
+	height: 20rem;
+    width: 25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.5rem;
+	gap: 1rem;
+    transition: all 0.3s;
+}
+
+.card-category:hover{
+    transform: scale(1.05);
+}
+
+.category-maceta {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../../img/categorias/maceta-card.jpeg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-suculentas {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../../img/categorias/suculentas.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-cactus {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../../img/categorias/cactus.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-category p {
+	font-size: 2rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category a {
+	font-size: 1.4rem;
+	color: #fff;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+.card-category a:hover {
+	text-decoration: underline;
+}
+
+/* CIERRE DE LOS ESTILOS DEL CONTENEDOR DE LAS CATEGORÍAS*/
+
+
+
+/* ////////////////////////////////////////////////////
+APERTURA DE LA GALERÍA DE FOTOS
+//////////////////////////////////////////////////////*/
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 15rem);
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-top: 30px;
+}
+
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery-img-3 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+
+.gallery-img-6 {
+	grid-column: 4/6;
+	grid-row: 2/4;
+}
+/* ///////////////////////////////////////
+    APERTURA DE CONTENEDOR DE ARTICULO
+    /////////////////////////////////////*/
+.titulo-articulo{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    align-self: center;
+    font-size: large;
+}
+
+.contenedor-articulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-articulo img{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.contenedor-texto{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor-texto a{
+    color: rgb(14, 0, 137);
+    text-decoration: none;
+}
+
+.contenedor-texto a:hover{
+    text-decoration: underline;
+}
+/* /////////////////////////////////////
+   PRUEBA DE ARTICULOS*/
+.articulos-container {
+    display: grid;
+    /*justify-content: center;*/
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    /*padding-bottom: 30px;*/
+}
+
+.article-box{
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.article-box img{
+    border-radius: 1rem;
+    height: 350;
+}
+
+.content-blog h3 {
+	font-size: 1.2rem;
+	margin-bottom: 1.7rem;
+	color: var(--dark-color);
+	font-weight: 500;
+}
+
+.content-blog h3:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.content-blog p {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #777;
+}
+
+.content-blog span {
+	color: var(--primary-color);
+	font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+   /*Cierre*/
+
+.btn-read-more {
+    float: left;
+	padding: 1rem 2rem;
+	background-color: #da7cb5;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border-radius: 2rem;
+	/*margin: 1rem 1rem 2rem 1rem;*/
+	/*display: inline-block;*/
+	cursor: pointer;
+}
+
+.btn-read-more:hover {
+	background-color: black;
+}
+

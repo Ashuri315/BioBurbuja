@@ -1,138 +1,187 @@
-*{
-    font-family: Arial, sans-serif;
-    font-size: 1.1rem;
+* {
+  font-family: Arial, sans-serif;
+
 }
-header{
-    text-align: center;
-    background-color: #6A994E;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    /* Para cambiar el logo a absoluto con respecto al header */
-    position: relative;
-    border-radius: 10px;
+body{
+  background-color: #f9f5f0;
 }
-header h1{
-    color: #FAF8F6;
-    font-size: 4em;
-    text-shadow: 2px 2px 2px #484848;
+
+p {
+  font-size: 1.1rem;
 }
-.logo{
-    height: 150px;
-    width: 150px;
-    /* Para que se pueda acomoda el texto en el centro del header 
+
+
+header {
+  text-align: center;
+  background-color: #7ec257;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* Para cambiar el logo a absoluto con respecto al header */
+  position: relative;
+  border-radius: 10px;
+}
+
+header h1 {
+  color: #FAF8F6;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #484848;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  /* Para que se pueda acomoda el texto en el centro del header 
     sin tomar en cuenta el logo*/
-    position: absolute;
-    left: 30px;
-    bottom: 25px;
-    border-radius: 50%;
-    transition: box-shadow 0.3s ease;
+  position: absolute;
+  left: 30px;
+  bottom: 9px;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
 }
-.logo:hover{
-    box-shadow: 0 8px 8px #484848;
+
+.logo:hover {
+  box-shadow: 0 8px 8px #484848;
 }
-.nav-bar{
-    display: flex;
-    background-color: #AF7746;
-    border-radius: 10px;
-    position: relative;
+
+.nav-bar {
+  display: flex;
+  background-color: #c28652;
+  border-radius: 10px;
+  position: relative;
 }
-.nav-button{
-    margin: 0 auto;
-    display: flex;
-    padding: 16px;
+
+.nav-button {
+  margin: 0 auto;
+  display: flex;
+  padding: 16px;
 }
-.nav-button a{
-    color: #FAF8F6;
-    text-decoration: none;
-    font-size: 1.2em;
-    /* Respecto a la posición */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Respecto al hover */
-    transition: box-shadow 0.3s ease;
-    
+
+.nav-button a {
+  color: #FAF8F6;
+  text-decoration: none;
+  font-size: 1.2em;
+  /* Respecto a la posición */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Respecto al hover */
+  transition: box-shadow 0.3s ease;
+
 }
-.nav-button a:hover{
-    text-decoration: underline;
+
+.nav-button a:hover {
+  text-decoration: underline;
 }
 
 /* Respecto al dropdown */
-button{
-    border: none;
-    background-color: inherit;
-    font-size: 1em;
+button {
+  border: none;
+  background-color: inherit;
+  font-size: 1em;
 }
-.dropdown{
-    /* Para acomodar los links del dropdown */
-    position: relative;
-}
-/* Sobre los que estan escondidos */
-  .dropdown-content {
-    /* Para que no se vean al inicio */
-    display: none;
-    position: absolute;
-    top: 61px;
-    left: 2px;
-    background-color: #AF7746;
-    border-radius: 10px;
-    padding: 15px;
-  }
-  /* Links del dropdown */
-  .dropdown-content a {
-    color: #FAF8F6;
-    padding: 6px 6px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2em;
-    transition: box-shadow 0.3s ease;
-  }
-  .dropdown-content a:hover {
-    background-color: #9f6735;
-    border-radius: 10px;
-  }
-  /* Este es el que muestra el dropdown */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 
-  /* Para el footer */
-  footer{
-    position: relative;
-    background-color: #BAD266;
-    height: 15rem;
-  }
-  .empresa{
-    position: absolute;
-    left: 30px;
-    bottom: -15px;
-    font-size: 2rem;
-  }
-  .logo-footer{
-    left: 43px;
-    bottom: 70px;
-  }
-  .icon-container{
-    text-decoration: none;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+.dropdown {
+  /* Para acomodar los links del dropdown */
+  position: relative;
 }
-  .icon-container li{
-    display: flex;
-    align-items: center;
-  }
-  .icon-container li a{
-    display: flex;
-    position: relative;
-    top: 4rem;
-    left: -30rem;
-  }
-  .icon{
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-  }
-   .icon:hover{
-    transform: scale(1.2);
-  }
+
+/* Sobre los que estan escondidos */
+.dropdown-content {
+  /* Para que no se vean al inicio */
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 2px;
+  background-color: #c28652;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Links del dropdown */
+.dropdown-content a {
+  color: #FAF8F6;
+  padding: 6px 6px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  transition: box-shadow 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #9f6735;
+  border-radius: 10px;
+}
+
+/* Este es el que muestra el dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Para el footer */
+footer {
+  position: relative;
+  background-color: #BAD266;
+  height: 15rem;
+  padding: 10px;
+}
+
+.empresa {
+  position: absolute;
+  left: 30px;
+  bottom: -15px;
+  font-size: 2rem;
+}
+
+.logo-footer {
+  left: 43px;
+  bottom: 90px;
+}
+
+.icon-container {
+  text-decoration: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Inicio div de seguir */
+#siguenos {
+  position: relative;
+  
+  left: 20rem;
+}
+
+.icon-container li {
+  display: flex;
+}
+
+.icon-container li a {
+  display: flex;
+  position: relative;
+  top: 0.6rem;
+  left: -20rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+/* Fin div de seguir */
+
+/* Inicio div de contactar */
+.contactanos h4,p{
+  margin: 0.6rem;
+}
+/* Fin div de contactar */
+.info{
+  display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2%;
+
+}
