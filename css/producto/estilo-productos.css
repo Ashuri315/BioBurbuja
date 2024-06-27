@@ -13,7 +13,9 @@
 	margin: 2px auto;
     font-size: 0.875em  
 }
-
+body{
+	background-color: #f9f5f0;
+}
 .top-categories {
 	display: flex;
 	flex-direction: column;

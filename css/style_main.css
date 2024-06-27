@@ -6,7 +6,9 @@
 p {
   font-size: 1.1rem;
 }
-
+.background{
+  background-color: #f9f5f0;
+}
 
 header {
   text-align: center;
